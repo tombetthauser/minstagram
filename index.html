@@ -3,7 +3,7 @@
     <style>
       body {
         width: 500px;
-        margin: 75px auto 150px;
+        margin: 50px auto 150px;
         max-width: 90%;
       }
       h1 {
@@ -42,6 +42,7 @@
         border: 1px solid cornflowerblue;
         border-radius: 5px;
         cursor: pointer;
+        box-shadow: -3px 3px cornflowerblue;
       }
       label {
         display: inline-block;
@@ -72,35 +73,58 @@
         border-radius: 3px;
         resize: none;
       }
+      .login-div {
+        width: 80%;
+        border-bottom: 1px solid lightgrey;
+        margin-bottom: 40px;
+        font-size: 13px;
+        padding-bottom: 7px;
+      }
+      .login-div > a {
+        font-size: 13px;
+        color: cornflowerblue;
+        display: inline-block;
+        margin-left: 3px;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .email-note-p {
+        font-size: 10px;
+        color: cornflowerblue;
+      }
     </style>
   </header>
   <body>
+    <div class="login-div">
+      already a beta user? <a>login</a>
+    </div>
     <h1>Minstagram Beta</h1>
     <p>
-      I'm a visual artist who supports my studio working as a web developer. <strong>I'm tired of Instagram.</strong> I've had good and bad moments with it, but ultimately it's never really felt like a place designed for artists.
+      Hi there! I'm a visual artist who supports my studio working as a web developer. <strong>I'm burnt out on Instagram.</strong> I've had some good and bad moments with it, but ultimately it's never really felt like a place designed for artists.
     </p>
     <p>
-      Minstagram is the working title for a free <strong>minimal Instagram alternative</strong> that I'd like to build during an upcoming batch at the Recurse Center in New York with the help of the experienced software engineers in their community.
+      Minstagram is the working title for a free <strong>minimal Instagram alternative</strong> that I'd like to build during an upcoming batch that I've been invited to attend at the Recurse Center based in Brooklyn.
     </p>
     <a target="new" href="http://recurse.com">[more on recurse center]</a>
     <a target="new" href="https://tombetthauser.com/">[more info on me]</a>
-    <h2>Core Vision...</h2>
+    <h2>The Basic Idea...</h2>
     <p>
-      Minstagram will be whatever it's artists want it to be. My hope is just that it will be a neutral space <strong>built for artists by artists</strong> where we can share work and connect with each-other. Some thoughts on that below.
+      Minstagram will be <strong>whatever artists want it to be.</strong> My hope is just that it turns into a neutral space where artists can share work and connect with each-other <strong>built for artists by artists</strong>. Some thoughts on what that looks like below.
     </p>
     <ul>
-      <li>chronological feed</li>
+      <li>built for artists by artists</li>
+      <li>simple chronological feed</li>
       <li>no hidden algorithms</li>
       <li>no paid advertisements</li>
       <li>no toxic / addictive features</li>
       <li>customizable user pages</li>
+      <li>no paywalls for artists</li>
       <li>no link restrictions</li>
-      <li>no paywall for artists</li>
       <li>free and open source</li>
     </ul>
     <h2>100 Beta Users...</h2>
     <p>
-      For no particular reason the beta group will be limited to 100 users who will be invited to <strong>optionally help guide the design of the platform</strong>. Anyone is welcome to apply but the target user groups are below.
+      To keep things simple the beta group will be limited to 100 users who will be invited to <strong>optionally help guide the design of the platform</strong>. Anyone is welcome to apply but the target user groups are below.
     </p>
     <ul>
       <li>practicing visual artists</li>
@@ -152,6 +176,9 @@
         <label>Preferred Email:</label>
         <input type="text"></input>
       </div>
+      <p class="email-note-p">
+        * you will not be added to any email lists
+      </p>
       <div class="textarea-div">
         <p>Why do you want to be a beta user?</p>
         <textarea></textarea>
