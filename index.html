@@ -1,25 +1,162 @@
 <html>
   <header>
     <style>
-      body: {
+      body {
         width: 500px;
-        margin: 75px auto;
+        margin: 75px auto 150px;
+        max-width: 90%;
+      }
+      h1 {
+        font-weight: 100;
+        font-family: sans-serif;
+        margin-top: 0;
+      }
+      h2 {
+        margin-top: 50px;
+        font-weight: 100;
+        font-family: sans-serif;
+      }
+      h3 {
+        margin-top: 50px;
+        font-weight: 100;
+        font-family: sans-serif;
+      }
+      form {
+        margin-top: 20px;
+        border: 1px solid lightgrey;
+        width: fit-content;
+        box-sizing: border-box;
+        padding: 30px 40px;
+        border-radius: 4px;
+        max-width: 100%;
+      }
+      form > div {
+        margin-bottom: 5px;
+      }
+      button {
+        display: block;
+        margin-top: 20px;
+        background-color: white;
+        color: cornflowerblue;
+        padding: 7px 25px;
+        border: 1px solid cornflowerblue;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      label {
+        display: inline-block;
+        width: 115px;
+      }
+      a {
+        color: cornflowerblue;
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      strong {
+        font-weight: 100;
+        color: cornflowerblue;
+      }
+      .textarea-div {
+        margin-top: 30px;
+      }
+      input {
+        border: 1px solid gray;
+        border-radius: 2px;
+      }
+      textarea {
+        width: 375px;
+        max-width: 100%;
+        height: 100px;
+        border: 1px solid gray;
+        border-radius: 3px;
+        resize: none;
       }
     </style>
   </header>
   <body>
     <h1>Minstagram Beta</h1>
     <p>
-      Welcome to the Minstagram project. Minstagram is the working title for a free, minimal and healthy-ish alternative to Instagram built specifically for artists by artists that will be built over the next four months. If you'd like to apply to be in the beta user group please fill out the form below. Thanks in advance for your interest!
+      I'm a visual artist who supports my studio working as a web developer. <strong>I'm tired of Instagram.</strong> I've had good and bad moments with it, but ultimately it's never really felt like a place designed for artists.
     </p>
+    <p>
+      Minstagram is the working title for a free <strong>minimal Instagram alternative</strong> that I'd like to build during an upcoming batch at the Recurse Center in New York with the help of the experienced software engineers in their community.
+    </p>
+    <a target="new" href="http://recurse.com">[more on recurse center]</a>
+    <a target="new" href="https://tombetthauser.com/">[more info on me]</a>
+    <h2>Core Vision...</h2>
+    <p>
+      Minstagram will be whatever it's artists want it to be. My hope is just that it will be a neutral space <strong>built for artists by artists</strong> where we can share work and connect with each-other. Some thoughts on that below.
+    </p>
+    <ul>
+      <li>chronological feed</li>
+      <li>no hidden algorithms</li>
+      <li>no paid advertisements</li>
+      <li>no toxic / addictive features</li>
+      <li>customizable user pages</li>
+      <li>no link restrictions</li>
+      <li>no paywall for artists</li>
+      <li>free and open source</li>
+    </ul>
+    <h2>100 Beta Users...</h2>
+    <p>
+      For no particular reason the beta group will be limited to 100 users who will be invited to <strong>optionally help guide the design of the platform</strong>. Anyone is welcome to apply but the target user groups are below.
+    </p>
+    <ul>
+      <li>practicing visual artists</li>
+      <li>gallerists / curators</li>
+      <li>potential collectors</li>
+      <li>art students</li>
+      <li>art lovers</li>
+    </ul>
+    <h2>Apply for Beta Group...</h2>
     <form>
-      <label>Name:</label>
-      <input type="text"></input>
-      <label>Education:</label>
-      <input type="text"></input>
-      <label>City:</label>
-      <input type="text"></input>
-      <input type="submit">submit</input>
+      <!-- <div>
+        <label>who are you:</label>
+        <select>
+          <option>an artist</option>
+          <option>a gallerist</option>
+          <option>a collector</option>
+          <option>other</option>
+        </select>
+      </div> -->
+      <!-- <div>
+        <label>highest education:</label>
+        <select>
+          <option>bfa</option>
+          <option>mfa</option>
+          <option>other degree / degrees</option>
+          <option>not yet in college</option>
+          <option>in bfa program</option>
+          <option>in mfa program</option>
+          <option>other</option>
+        </select>
+      </div> -->
+      <!-- <div>
+        <label>name of school / schools:</label>
+        <input type="text"></input>
+      </div> -->
+      <!-- <div>
+        <label>profession / employer:</label>
+        <input type="text"></input>
+      </div> -->
+      <div>
+        <label>Personal Website:</label>
+        <input type="text"></input>
+      </div>
+      <!-- <div>
+        <label>current city / country:</label>
+        <input type="text"></input>
+      </div> -->
+      <div>
+        <label>Preferred Email:</label>
+        <input type="text"></input>
+      </div>
+      <div class="textarea-div">
+        <p>Why do you want to be a beta user?</p>
+        <textarea></textarea>
+      </div>
+      <button>submit</button>
     </form>
   </body>
 </html>
