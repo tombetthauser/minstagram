@@ -115,13 +115,23 @@
       font-size: 10px;
       color: cornflowerblue;
     }
+    .image-header {
+      background-image: url("https://hewlett.org/wp-content/uploads/2019/06/arts-advocacy.jpg");
+      /* background-image: url("https://images.unsplash.com/photo-1631212474551-9f505cf2b7b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"); */
+      width: 100%;
+      height: 125px;
+      background-position: center;
+      background-size: cover;
+      margin-bottom: 30px;
+      /* filter: sepia(1) hue-rotate(270deg) saturate(1); */
+    }
   </style>
 </header>
-
 <body>
   <div class="login-div">
     already a beta user? <a>login</a>
   </div>
+  <!-- <div class="image-header"></div> -->
   <h1>Minstagram Beta</h1>
   <p>
     Hi there! I'm a visual artist who supports my studio working as a web developer. <strong>I'm burnt out on
@@ -141,19 +151,20 @@
     thoughts on what that looks like below.
   </p>
   <ul>
+    <li>minimal instagram alternative</li>
     <li>built for artists by artists</li>
     <li>simple chronological feed</li>
+    <li>customizable user pages</li>
     <li>no hidden algorithms</li>
     <li>no paid advertisements</li>
-    <li>no toxic / addictive features</li>
-    <li>customizable user pages</li>
     <li>no paywalls for artists</li>
     <li>no link restrictions</li>
+    <li>no toxic features</li>
     <li>free and open source</li>
   </ul>
   <h2>100 Beta Users...</h2>
   <p>
-    To keep things simple the beta group will be limited to 100 users who will be invited to <strong>optionally help
+    To keep things simple the initial beta group will be limited to 100 users who will be invited to <strong>optionally help
       guide the design of the platform</strong>. Anyone is welcome to apply but the target user groups are below.
   </p>
   <ul>
@@ -165,43 +176,10 @@
   </ul>
   <h2>Apply for Beta Group...</h2>
   <form>
-    <!-- <div>
-        <label>who are you:</label>
-        <select>
-          <option>an artist</option>
-          <option>a gallerist</option>
-          <option>a collector</option>
-          <option>other</option>
-        </select>
-      </div> -->
-    <!-- <div>
-        <label>highest education:</label>
-        <select>
-          <option>bfa</option>
-          <option>mfa</option>
-          <option>other degree / degrees</option>
-          <option>not yet in college</option>
-          <option>in bfa program</option>
-          <option>in mfa program</option>
-          <option>other</option>
-        </select>
-      </div> -->
-    <!-- <div>
-        <label>name of school / schools:</label>
-        <input type="text"></input>
-      </div> -->
-    <!-- <div>
-        <label>profession / employer:</label>
-        <input type="text"></input>
-      </div> -->
     <div>
       <label>Personal Website:</label>
       <input type="text"></input>
     </div>
-    <!-- <div>
-        <label>current city / country:</label>
-        <input type="text"></input>
-      </div> -->
     <div>
       <label>Preferred Email:</label>
       <input type="text"></input>
@@ -215,6 +193,14 @@
     </div>
     <button>submit</button>
   </form>
+  <h2>Other Thoughts...</h2>
+  <p>
+    This project has no delusions of competing directly with large for-profit platforms. But there's more than one kind of success and open source proofs of concepts are important for building a better web.
+  </p>
+  <p>
+    As long as their are artists interested in this using whatever this platform becomes I'll continue to freely maintain, promote and improve it.
+  </p>
+
 </body>
 
 </html>
