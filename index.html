@@ -57,6 +57,7 @@
       border-radius: 5px;
       cursor: pointer;
       box-shadow: -3px 3px cornflowerblue;
+      animation: rainbowbox 90s linear infinite;
     }
 
     label {
@@ -69,11 +70,13 @@
       display: block;
       font-size: 14px;
       line-height: 20px;
+      animation: rainbowroad 90s linear infinite;
     }
 
     strong {
       font-weight: 100;
       color: cornflowerblue;
+      animation: rainbowroad 90s linear infinite;
     }
 
     .textarea-div {
@@ -109,11 +112,13 @@
       margin-left: 3px;
       text-decoration: underline;
       cursor: pointer;
+      animation: rainbowroad 90s linear infinite;
     }
 
     .email-note-p {
       font-size: 10px;
       color: cornflowerblue;
+      animation: rainbowroad 90s linear infinite;
     }
     .image-header {
       background-image: url("https://hewlett.org/wp-content/uploads/2019/06/arts-advocacy.jpg");
@@ -124,6 +129,22 @@
       background-size: cover;
       margin-bottom: 30px;
       /* filter: sepia(1) hue-rotate(270deg) saturate(1); */
+    }
+    @keyframes rainbowroad {
+      0% {color: cornflowerblue}
+      20% {color: lightseagreen}
+      40% {color: goldenrod}
+      60% {color: palevioletred}
+      80% {color: mediumslateblue}
+      100% {color: cornflowerblue}
+    }
+    @keyframes rainbowbox {
+      0% {color: cornflowerblue; border: 1px solid cornflowerblue; box-shadow: -3px 3px cornflowerblue;}
+      20% {color: lightseagreen; border: 1px solid lightseagreen; box-shadow: -3px 3px lightseagreen;}
+      40% {color: goldenrod; border: 1px solid goldenrod; box-shadow: -3px 3px goldenrod;}
+      60% {color: palevioletred; border: 1px solid palevioletred; box-shadow: -3px 3px palevioletred;}
+      80% {color: mediumpurple; border: 1px solid mediumpurple; box-shadow: -3px 3px mediumpurple;}
+      100% {color: cornflowerblue; border: 1px solid cornflowerblue; box-shadow: -3px 3px cornflowerblue;}
     }
   </style>
 </header>
